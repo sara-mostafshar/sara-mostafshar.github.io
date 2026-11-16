@@ -44,6 +44,13 @@
   .btn.primary { background: #7C3AED; color: #fff; }
   .btn.ghost { border: 1.5px solid var(--purple); color: var(--text); background: rgba(30,27,75,.6); }
   .btn:hover { filter: brightness(1.1); }
+  .btn.linkedin { background: #0A66C2; color: #fff; }
+  nav .links a.li { color: #fff; background: #0A66C2; padding: 6px 12px; border-radius: 8px; font-weight: 600; }
+  @media (max-width: 640px) { nav .links a.li { display: inline-block; } }
+  .follow { margin: 40px 0 10px; padding: 26px 24px; border-radius: 14px; text-align: center;
+    background: linear-gradient(135deg, rgba(10,102,194,.25), rgba(124,58,237,.2)); border: 1px solid #0A66C2; }
+  .follow h3 { margin: 0 0 8px; font-size: 22px; }
+  .follow p { margin: 0 0 16px; color: #CBD5E1; }
   @media (max-width: 760px) { .hero { grid-template-columns: 1fr; text-align: center; gap: 24px; padding-top: 40px; }
     .avatar { margin: 0 auto; width: 170px; height: 170px; } h1 { font-size: 34px; } .cta { justify-content: center; } .lead { margin-left: auto; margin-right: auto; } }
 
@@ -91,7 +98,8 @@
 <nav><div class="wrap">
   <a class="brand" href="#top">Sara Mostafshar</a>
   <div class="links"><a href="#tools">Free tools</a><a href="#agents">AI agents</a><a href="#about">About</a>
-    <a class="yt" href="https://www.youtube.com/@saramostafshar7216" target="_blank" rel="noopener">YouTube</a></div>
+    <a class="yt" href="https://www.youtube.com/@saramostafshar7216" target="_blank" rel="noopener">YouTube</a>
+    <a class="li" href="https://www.linkedin.com/in/sara-mostafshar/" target="_blank" rel="noopener">LinkedIn</a></div>
 </div></nav>
 
 <main class="wrap" id="top">
@@ -103,6 +111,7 @@
       <p class="lead">I build AI agents and simple web tools for project controllers. They turn cost, schedule and risk data into clear, simple summaries that top management can act on.</p>
       <div class="cta">
         <a class="btn primary" href="#tools">Try the free tools</a>
+        <a class="btn linkedin" href="https://www.linkedin.com/in/sara-mostafshar/" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> Connect on LinkedIn</a>
         <a class="btn ghost" href="https://www.youtube.com/@saramostafshar7216" target="_blank" rel="noopener">▶ Watch on YouTube</a>
       </div>
     </div>
@@ -234,11 +243,18 @@
       </div>
     </div>
   </section>
+
+  <div class="follow">
+    <h3>More free tools for project controllers are on the way</h3>
+    <p>Follow me on LinkedIn to get the next tool and AI agent as soon as it is published.</p>
+    <a class="btn linkedin" href="https://www.linkedin.com/in/sara-mostafshar/" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> Follow me on LinkedIn</a>
+  </div>
 </main>
 
 <footer><div class="wrap">
   © 2026 Sara Mostafshar · <a href="https://www.youtube.com/@saramostafshar7216" target="_blank" rel="noopener">YouTube</a> ·
-  <a href="https://github.com/sara-mostafshar" target="_blank" rel="noopener">GitHub</a><br>
+  <a href="https://github.com/sara-mostafshar" target="_blank" rel="noopener">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/sara-mostafshar/" target="_blank" rel="noopener">LinkedIn</a><br>
   All project data shown in the tools and videos is fictional sample data.
 </div></footer>
 </body>
