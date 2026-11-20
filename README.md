@@ -2,6 +2,6 @@
 
 Source of my portfolio: **https://sara-mostafshar.github.io**
 
-AI agents and free web tools for project controllers – cost, schedule, risk and reporting.
+AI agents and free web tools for project controllers and project managers – cost, schedule, risk and reporting.
 
 Built by Sara Mostafshar
