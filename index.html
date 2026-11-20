@@ -262,6 +262,20 @@
   All project data shown in the tools and videos is fictional sample data.
 </div></footer>
 <!-- Visitor count (GoatCounter, no cookies) -->
+<script>
+/* Anonymous usage counting with GoatCounter: only button names are sent, never file contents or data. */
+(function(){
+  function gc(name){ try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:name,title:name,event:true}); }catch(e){} }
+  var CLICKS=[["a[href*=\"monte-carlo-risk-analysis\"]","home-open-monte-carlo"],["a[href*=\"schedule-health-check\"]","home-open-schedule-health-check"],["a[href$=\".zip\"]","home-download-dashboard-sample"],["a[href*=\"project-controls-dashboard\"]","home-open-dashboard"],["a[href*=\"linkedin.com\"]","home-linkedin"],["a[href*=\"youtube.com/@\"]","home-youtube-channel"],["a[href*=\"youtu.be/\"]",function(el){return "home-video-"+el.getAttribute("href").split("/").pop();}],["a[href*=\"github.com/sara\"]","home-github"]];
+  var CHANGES=[];
+  document.addEventListener("click",function(e){
+    for(var i=0;i<CLICKS.length;i++){ var el=e.target.closest&&e.target.closest(CLICKS[i][0]); if(el){ var n=CLICKS[i][1]; gc(typeof n==="function"?n(el):n); return; } }
+  },true);
+  document.addEventListener("change",function(e){
+    for(var i=0;i<CHANGES.length;i++){ if(e.target.matches&&e.target.matches(CHANGES[i][0])&&e.target.files&&e.target.files.length){ gc(CHANGES[i][1]); return; } }
+  },true);
+})();
+</script>
 <script data-goatcounter="https://saramostafshar.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
