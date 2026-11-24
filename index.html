@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sara Mostafshar – AI agents and free tools for project controllers and project managers</title>
-<meta name="description" content="Portfolio of Sara Mostafshar: free web tools and AI agents for project controllers and project managers – schedule health checks, Monte Carlo risk analysis, EVM variance reporting and management dashboards.">
+<meta name="description" content="Portfolio of Sara Mostafshar: free web tools and AI agents for project controllers and project managers – schedule health checks, Monte Carlo risk analysis, change and contingency tracking, EVM variance reporting and management dashboards.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sara-mostafshar.github.io/">
 <meta property="og:title" content="Sara Mostafshar – AI agents & free tools for project controllers and project managers">
-<meta property="og:description" content="For project controllers and project managers: free browser tools for Monte Carlo risk analysis, DCMA 14-point schedule health checks and project dashboards, plus AI agents that turn project data into management reports.">
+<meta property="og:description" content="For project controllers and project managers: free browser tools for Monte Carlo risk analysis, DCMA 14-point schedule health checks, change and contingency tracking and project dashboards, plus AI agents that turn project data into management reports.">
 <meta property="og:image" content="https://sara-mostafshar.github.io/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
@@ -131,10 +131,24 @@
     <p class="sub">No install, no sign-up. Your file is read in your own browser and is not uploaded anywhere. Each tool explains its method on the page.</p>
     <div class="grid">
       <article class="card featured">
+        <a class="thumb" href="https://sara-mostafshar.github.io/change-contingency-tracker/" target="_blank" rel="noopener">
+          <img alt="Change &amp; Contingency Tracker" src="thumbnails/thumbnail_free_tool_change_contingency_tracker.jpg"></a>
+        <div class="body">
+          <span class="tag live">● Live tool · New</span>
+          <h3>Change &amp; Contingency Tracker</h3>
+          <p>Upload your change log – an ERP export (SAP or others) or any Excel register – and see contingency used and left, likely pending exposure, the burn index against progress, changes waiting for a decision and a one-page summary for management.</p>
+          <div class="chips"><span class="chip">Contingency</span><span class="chip">Change orders</span><span class="chip">Burn index</span><span class="chip">ERP export</span></div>
+          <div class="actions">
+            <a class="btn primary" href="https://sara-mostafshar.github.io/change-contingency-tracker/" target="_blank" rel="noopener">Open the tool</a>
+            <a class="btn ghost" href="https://youtu.be/C9WpigIZswU" target="_blank" rel="noopener">▶ Video 2:13</a>
+          </div>
+        </div>
+      </article>
+      <article class="card featured">
         <a class="thumb" href="https://sara-mostafshar.github.io/monte-carlo-risk-analysis/" target="_blank" rel="noopener">
           <img alt="Monte Carlo Risk Analysis" src="thumbnails/thumbnail_free_tool_monte_carlo_risk_analysis.png"></a>
         <div class="body">
-          <span class="tag live">● Live tool · New</span>
+          <span class="tag live">● Live tool</span>
           <h3>Monte Carlo Risk Analysis</h3>
           <p>Is our contingency enough? Upload your cost estimate and risk register and get P50 / P80 cost and finish dates, traffic lights, the top risk drivers and a management summary in seconds.</p>
           <div class="chips"><span class="chip">P50 / P80</span><span class="chip">Contingency</span><span class="chip">Risk register</span><span class="chip">Excel export</span></div>
@@ -273,7 +287,7 @@
 /* Anonymous usage counting with GoatCounter: only button names are sent, never file contents or data. */
 (function(){
   function gc(name){ try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:name,title:name,event:true}); }catch(e){} }
-  var CLICKS=[["a[href*=\"monte-carlo-risk-analysis\"]","home-open-monte-carlo"],["a[href*=\"schedule-health-check\"]","home-open-schedule-health-check"],["a[href$=\".zip\"]","home-download-dashboard-sample"],["a[href*=\"project-controls-dashboard\"]","home-open-dashboard"],["a[href*=\"linkedin.com\"]","home-linkedin"],["a[href*=\"youtube.com/@\"]","home-youtube-channel"],["a[href*=\"youtu.be/\"]",function(el){return "home-video-"+el.getAttribute("href").split("/").pop();}],["a[href*=\"github.com/sara\"]","home-github"]];
+  var CLICKS=[["a[href*=\"change-contingency-tracker\"]","home-open-change-contingency-tracker"],["a[href*=\"monte-carlo-risk-analysis\"]","home-open-monte-carlo"],["a[href*=\"schedule-health-check\"]","home-open-schedule-health-check"],["a[href$=\".zip\"]","home-download-dashboard-sample"],["a[href*=\"project-controls-dashboard\"]","home-open-dashboard"],["a[href*=\"linkedin.com\"]","home-linkedin"],["a[href*=\"youtube.com/@\"]","home-youtube-channel"],["a[href*=\"youtu.be/\"]",function(el){return "home-video-"+el.getAttribute("href").split("/").pop();}],["a[href*=\"github.com/sara\"]","home-github"]];
   var CHANGES=[];
   document.addEventListener("click",function(e){
     for(var i=0;i<CLICKS.length;i++){ var el=e.target.closest&&e.target.closest(CLICKS[i][0]); if(el){ var n=CLICKS[i][1]; gc(typeof n==="function"?n(el):n); return; } }
